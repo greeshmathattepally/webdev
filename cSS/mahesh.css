@@ -1,0 +1,91 @@
+html
+{
+height:100%;
+}
+body
+{
+
+margin:2%;
+background:linear-gradient(#e0ffff 0%,#666666 100%);
+text-align:center;
+background-repeat:no-repeat;
+font-size:125%;
+}
+h1
+{
+color:#0E7A80;
+}
+nav a
+{
+display:block;
+align:right;
+border:2px solid yellow;
+margin:5px;
+color:#EC2843;
+background-color:#F3D6EB  ;
+text-decoration:none;
+}
+nav
+{align-content: center;
+width:10%;
+float:right;
+}
+a:hover
+{
+
+background:white;
+}
+a:focus
+{
+background:white;
+}
+section
+{
+
+
+margin-left:auto; 
+    margin-right:auto;
+}
+.trans
+{
+color:black;
+background:white;
+width:250px;
+height:200px;
+line-height:200px;
+text-align:center;
+border-radius:6px;
+transition-property:color,width,background,border-radius;
+transition-duration:.5s;
+transition-timing-function:linear;
+transition-delay:.5s;
+/*transition:color,width,background,border-radius .5s linear, ease-in 1s;*/
+
+}
+.trans:hover
+{
+color:green;
+background:yellow;
+width:350px;
+
+border-radius:40%;
+}
+.trans:active
+{
+color:green;
+background:blue;
+width:350px;
+
+border-radius:40%;
+}
+table:hover
+{
+transform:translate(3em,0);
+transform: rotate(30deg);
+transform: scale(2);
+}
+footer
+{
+clear:both;
+display:inline;
+}

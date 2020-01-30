@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center; background-color:AliceBlue">
+<img src="bvritlogo.png" alt="bvrit logo">
+<h3>Click the button to display current period</h3>
+
+  <a href="table.html"><button style="font-size:20px; padding:5px 15px;" onclick="myFunction1()">IT-A</button></a>
+  <button style="font-size:20px; padding:5px 15px;" onclick="myFunction2()">IT-B</button>
+
+<i><p style="font-size:20px;" id="demo2"></p></i>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sunday";
+  weekday[1] = "Monday";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Friday";
+  weekday[6] = "Saturday";
+
+  var n = d.getDay();
+var x=weekday[n];
+
+
+var k=d.getHours()+":"+d.getMinutes();
+ document.getElementById("demo").innerHTML =k ;
+ document.getElementById("demo2").innerHTML =x ;
+
+function myFunction1() {
+
+
+  
+if(n==1)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: SE";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: JAVA";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="BREAK";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: PS";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: DBMS";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: PE1";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: SPL LAB";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: SPL LAB";
+       }
+
+}
+if(n==2)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: JAVA";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: JAVA LAB";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: JAVA LAB";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: JAVA LAB";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: PE1";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: PS";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: DAA";
+       }
+}
+if(n==3)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: DAA";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: JAVA";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: SE";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: PS";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: DBMS";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: ELAB";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: ELAB";
+       }
+}
+if(n==4)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: DBMS";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: DAA";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: PS";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: SE";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: DBMS LAB";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: DBMS LAB";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: DBMS LAB";
+       }
+      
+}
+if(n==5)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: JAVA";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: PE1";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: PS";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: DBMS";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: SE";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: PSPD";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: PSPD";
+       }
+}
+if(n==6)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: PE1";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: DBMS";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: GS";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: GS";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="CURRICULAR/CO-CURRICULAR/EXTRA-CURRICULAR ACTIVITIES";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="CURRICULAR/CO-CURRICULAR/EXTRA-CURRICULAR ACTIVITIES";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="CURRICULAR/CO-CURRICULAR/EXTRA-CURRICULAR ACTIVITIES";
+       }
+}
+}
+function myFunction2() {
+  
+if(n==1)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: SE";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: JAVA";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="BREAK";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: PS";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: DBMS";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: PE1";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: SPL LAB";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: SPL LAB";
+       }
+
+}
+if(n==2)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: JAVA";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: JAVA LAB";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: JAVA LAB";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: JAVA LAB";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: PE1";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: PS";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: DAA";
+       }
+}
+if(n==3)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: DAA";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: JAVA";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: SE";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: PS";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: DBMS";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: ELAB";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: ELAB";
+       }
+}
+if(n==4)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: DBMS";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: DAA";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: PS";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: SE";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: DBMS LAB";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: DBMS LAB";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: DBMS LAB";
+       }
+      
+}
+if(n==5)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: JAVA";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: PE1";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: PS";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: DBMS";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="Period 5: SE";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 6: PSPD";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="Period 7: PSPD";
+       }
+}
+if(n==6)
+{
+
+      if((d.getHours()==9&&d.getMinutes()>=30)||(d.getHours()==10&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Period 1: PE1";
+        }
+        else if((d.getHours()==10&&d.getMinutes()>=20)||(d.getHours()==11&&d.getMinutes()<10))
+        {
+        document.getElementById("demo1").innerHTML ="Period 2: DBMS";
+        }
+       else if((d.getHours()==11&&d.getMinutes()>=10)||(d.getHours()==11&&d.getMinutes()<20))
+       {
+        document.getElementById("demo1").innerHTML ="Break";
+       }
+       else if((d.getHours()==11&&d.getMinutes()>=20)||(d.getHours()==12&&d.getMinutes()<10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 3: GS";
+       }
+       else if((d.getHours()==12&&d.getMinutes()>=10))
+       {
+        document.getElementById("demo1").innerHTML ="Period 4: GS";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=0)||(d.getHours()==13&&d.getMinutes()<40))
+       {
+        document.getElementById("demo1").innerHTML ="Lunch";
+       }
+       else if((d.getHours()==13&&d.getMinutes()>=40)||(d.getHours()==14&&d.getMinutes()<30))
+       {
+        document.getElementById("demo1").innerHTML ="CURRICULAR/CO-CURRICULAR/EXTRA-CURRICULAR ACTIVITIES";
+       }
+        else if((d.getHours()==14&&d.getMinutes()>=30)||(d.getHours()==15&&d.getMinutes()<15))
+       {
+        document.getElementById("demo1").innerHTML ="CURRICULAR/CO-CURRICULAR/EXTRA-CURRICULAR ACTIVITIES";
+       }
+       else if((d.getHours()==15&&d.getMinutes()>=15))
+       {
+        document.getElementById("demo1").innerHTML ="CURRICULAR/CO-CURRICULAR/EXTRA-CURRICULAR ACTIVITIES";
+       }
+}
+}
+
+</script>
+
+</body>
+</html>
+
+
+
